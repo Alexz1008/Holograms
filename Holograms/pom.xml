@@ -16,8 +16,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
     <build>
@@ -57,29 +57,29 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>16</source>
+                    <target>16</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>Plugin Metrics</id>
-            <url>http://repo.mcstats.org/content/repositories/public</url>
-        </repository>
+<!--        <repository>-->
+<!--            <id>spigot-repo</id>-->
+<!--            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>Plugin Metrics</id>-->
+<!--            <url>http://repo.mcstats.org/content/repositories/public</url>-->
+<!--        </repository>-->
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <groupId>com.destroystokyo.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -89,67 +89,12 @@
         </dependency>
         <dependency>
             <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_8_R1</artifactId>
+            <artifactId>holograms-v1_16_R3</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_8_R2</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_8_R3</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_9_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_9_R2</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_10_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_11_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_12_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_13_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_13_R2</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_14_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_15_R1</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sainttx.holograms</groupId>
-            <artifactId>holograms-v1_16_R1</artifactId>
+            <artifactId>holograms-v1_17_R1</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
