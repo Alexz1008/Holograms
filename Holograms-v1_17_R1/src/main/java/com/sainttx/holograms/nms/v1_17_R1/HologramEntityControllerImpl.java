@@ -25,7 +25,7 @@ public class HologramEntityControllerImpl implements HologramEntityController {
 
     static {
         try {
-            registerEntityMethod = WorldServer.class.getDeclaredMethod("registerEntity", Entity.class);
+            registerEntityMethod = WorldServer.class.getDeclaredMethod("addEntity", Entity.class);
             registerEntityMethod.setAccessible(true);
         } catch (NoSuchMethodException e) {
             throw new RuntimeException(e);
